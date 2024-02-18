@@ -1,0 +1,53 @@
+
+  body {
+    margin: 0; /* ลบ margin ที่มากับ body */
+    background-color: #f5b5f5; /* กำหนดสีพื้นหลังของ body */
+  }
+  
+  .container {
+    position: relative;
+    width: 100%;
+  }
+  
+  #cartoon {
+    width: 30%; /* ทำให้รูปภาพเต็มขนาดของ .container */
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black; /* สีของข้อความ */
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .option-button {
+    position: absolute;
+    top: 70%;
+    height: 50px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #yes {
+    left: 40%; /* ปรับตำแหน่งไปที่ 50% ของความกว้างของ .container */
+    transform: translateX(-50%); /* ย้ายไปทางซ้าย 50% ของตัวเอง */
+    width: 15%; /* ปรับความกว้าง */
+  }
+  
+  #no {
+    right: 40%; /* ปรับตำแหน่งไปที่ 50% ของความกว้างของ .container */
+    transform: translateX(50%); /* ย้ายไปทางขวา 50% ของตัวเอง */
+    width: 15%; /* ปรับความกว้าง */
+  }
+  
+  #yes:hover, #no:hover {
+    background-color: #51e4e4; /* สีพื้นหลังเมื่อ hover */
+  }
+  
